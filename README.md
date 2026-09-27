@@ -2,9 +2,9 @@
 Creating SystemVerilog code to recreate classic games
 
 ## Project Breakdown  
-### Display and Timing
+## Display and Timing
 The first project to tackle is the display and timing system. This covers the following:
-#### Define the virtual screen:
+### Define the virtual screen:
 - Resolution : 160 x 144
 - Coordinates : X = 0 --> 159. Y = 0 --> 143
 - Colour Depth: 2 Bits
@@ -17,9 +17,9 @@ The first project to tackle is the display and timing system. This covers the fo
 - 10 = dark grey
 - 11 = black  
 The most fundamental part is that there is two counters that cycle through each row and column.
-#### 60 FPS timing and `frame_ready`
+### 60 FPS timing and `frame_ready`
 Rather than X/Y scanning speed determining frame rate. I'm going to implement a frame_ready and a 60 fps update rate. So when both of these are valid the next frame will be displayed.
-#### Renderer Architecture  
+### Renderer Architecture  
 ```mermaid
 flowchart TD
 
@@ -52,7 +52,7 @@ flowchart TD
     style FRAME fill:none
     style TIMER fill:none
 ```
-### Menu  
+## Menu  
 **The menu needs to achieve the following:**  
 - Display a list of games (Game Display)
 - Control the selection of games
