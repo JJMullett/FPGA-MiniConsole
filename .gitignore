@@ -1,0 +1,20 @@
+# Quartus generated folders
+db/
+incremental_db/
+output_files/
+
+# Quartus temporary/generated files
+*.qws
+*.bak
+*.rpt
+*.summary
+*.smsg
+*.done
+*.jdi
+*.sld
+
+# ModelSim / Questa generated files
+work/
+transcript
+vsim.wlf
+*.wlf
