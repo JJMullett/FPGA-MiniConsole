@@ -27,7 +27,7 @@ flowchart TD
 
     subgraph FRAME["Frame Generation System"]
         direction TB
-        FG["Frame Generation"]
+        FG["Display Scanner"]
         READY["frame_ready"]
         FG --> READY
     end
