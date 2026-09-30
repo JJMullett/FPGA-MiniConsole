@@ -1,11 +1,10 @@
-module FrameTimer#(
-	parameter integer CLK_FREQ = 50_000_000,
-	parameter integer FRAME_RATE = 60,
-)(
+module FrameTimer(
 	input  logic clk,
 	input  logic reset,
 	output logic Hz60_signal
 );
+
+	import game_params::*;
 
 	localparam integer COUNT_MAX = (CLK_FREQ / FRAME_RATE) - 1;
 	
