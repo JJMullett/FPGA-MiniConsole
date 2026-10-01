@@ -4,8 +4,8 @@ Creating SystemVerilog code to recreate classic games
 # Project Breakdown  
 ## Frame Generation
 The first step to successfully completing the display is the frame generation. The role of the frame generation is to create a complete display frame. 
-<summary>
-<details>The spec is as seen below:</details>
+<summary>The spec is as seen below:
+<details>
 
 # Module Specification: `FrameGenerator`
 
@@ -82,7 +82,7 @@ Must test:
 - That the ball doesnt move until enable is asserted.
 - That the when `enable` is pulsed the the enable latches, until reset.
 - That the position updates only when `frame_tick` is active.
-
+</details>
 </summary>
 
 ## Display and Timing
